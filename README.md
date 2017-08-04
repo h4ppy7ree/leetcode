@@ -1,1 +1,1 @@
-<https://leetcode.com/problemset/all/>
+<https://leetcode.com/problemset/all/?difficulty=Easy&listId=wpwgkgt>
