@@ -4,7 +4,7 @@
  * @Author: yanyan.yyy 
  * @Date: 2017-08-04 23:23:07 
  * @Last Modified by: yanyan.yyy
- * @Last Modified time: 2017-08-05 01:08:16
+ * @Last Modified time: 2017-08-05 01:17:10
  */
  '''
 
@@ -27,6 +27,10 @@ class Solution(object):
         """
         :type s: str
         :rtype: str
+        
+        解题思路：
+        python字符串切片，str[start:stop:step]
+        当step等于-1时，每次步长为-1，相当于逆序。
         """
         return s[::-1]
 
