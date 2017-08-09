@@ -1,12 +1,16 @@
-# -*- coding: utf-8 -*-
-'''
-/*
- * @Author: yanyan.yyy 
- * @Date: 2017-08-04 23:23:07 
- * @Last Modified by: yanyan.yyy
- * @Last Modified time: 2017-08-05 01:17:10
- */
- '''
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+###
+# File: /ReverseString.py
+# Project: leetcode
+# Created Date: Saturday, August 5th 2017, 12:52:55 am
+# Author: yanyan.yyy
+# -----
+# Last Modified: Sat Aug 05 2017
+# Modified By: yanyan.yyy
+# -----
+###
+
 
 '''
 URL:<https://leetcode.com/problems/reverse-string/description/>
@@ -15,8 +19,10 @@ Write a function that takes a string as input and returns the string reversed.
 Example:
 Given s = "hello", return "olleh".
 '''
+
+
 class Solution(object):
-    def reverseString_old(self, s):
+    def reverseStringOld(self, s):
         """
         :type s: str
         :rtype: str
@@ -33,6 +39,7 @@ class Solution(object):
         当step等于-1时，每次步长为-1，相当于逆序。
         """
         return s[::-1]
+
 
 if __name__ == "__main__":
     print Solution().reverseString('hello')

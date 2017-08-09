@@ -1,12 +1,16 @@
-# -*- coding: utf-8 -*-
-'''
-/*
- * @Author: yanyan.yyy 
- * @Date: 2017-08-04 23:23:07 
- * @Last Modified by: yanyan.yyy
- * @Last Modified time: 2017-08-05 00:35:07
- */
- '''
+#!/usr/bin/env python
+# -*- coding:utf-8 -*-
+###
+# File: /HammingDistance.py
+# Project: leetcode
+# Created Date: Friday, August 4th 2017, 11:21:00 pm
+# Author: yanyan.yyy
+# -----
+# Last Modified: Sat Aug 05 2017
+# Modified By: yanyan.yyy
+# -----
+###
+
 
 '''
 URL:<https://leetcode.com/problems/hamming-distance/description/>
@@ -25,8 +29,9 @@ Explanation:
 The above arrows point to positions where the corresponding bits are different.
 '''
 
+
 class Solution(object):
-    def hammingDistance_old(self, x, y):
+    def hammingDistanceOld(self, x, y):
         """
         :type x: int
         :type y: int
@@ -41,7 +46,7 @@ class Solution(object):
             BinX = '0'*(len(BinY)-len(BinX)) + BinX
         for i in range(0, len(BinX)):
             if BinX[i] != BinY[i]:
-                count+=1
+                count += 1
         return count
 
     def hammingDistance(self, x, y):
@@ -56,5 +61,6 @@ class Solution(object):
         '''
         return bin(x ^ y).count('1')
 
+
 if __name__ == "__main__":
-    print Solution().hammingDistance(1,4)
+    print Solution().hammingDistance(1, 4)
