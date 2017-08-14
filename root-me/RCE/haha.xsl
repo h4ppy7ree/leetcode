@@ -14,8 +14,8 @@
     XSLT Version: <xsl:value-of select="system-property('xsl:version')" /><br/>
     XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br/>
     XSLT Verdor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br/>
-    FileContent:  <xsl:value-of select="document('filePath.xml')" /><br/>
-    <xsl:value-of select="document(filePath)" /><br/>
+    ReadXml:  <xsl:value-of select="document('filePath.xml')" /><br/>
+    FileContent:  <xsl:value-of select="document(filePath)" /><br/>
   </div>
 </xsl:for-each>
 </body>
