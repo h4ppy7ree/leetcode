@@ -10,6 +10,7 @@
  */
 
 
+-- https://leetcode.com/problems/exchange-seats/description/
 SELECT 
     a.id as id
     , case

@@ -1,0 +1,25 @@
+/**
+ * File: /NthHighestSalary.sql
+ * Project: DB
+ * Created Date: Wednesday, November 15th 2017, 3:39:29 pm
+ * Author: yanyan.yyy
+ * -----
+ * Last Modified: Wed Nov 15 2017
+ * Modified By: yanyan.yyy
+ * -----
+ */
+
+
+-- https://leetcode.com/problems/nth-highest-salary/description/
+CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT
+BEGIN
+    set N=N-1;
+  RETURN (
+    --  # Write your MySQL query statement below.
+    select
+        distinct Salary
+    from Employee
+    order by Salary desc
+    limit N, 1
+  );
+END

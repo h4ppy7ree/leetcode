@@ -10,3 +10,9 @@
  */
 
 
+-- https://leetcode.com/problems/rank-scores/description/
+select
+    a.score as Score
+    , (select count(distinct score) from `Scores` where score>=a.score order by score desc) as Rank
+from `Scores` a
+order by score desc;
