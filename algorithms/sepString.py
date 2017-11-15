@@ -6,7 +6,7 @@
 # Created Date: Wednesday, August 9th 2017, 9:16:49 pm
 # Author: yanyan.yyy
 # -----
-# Last Modified: Wed Aug 09 2017
+# Last Modified: Wed Nov 01 2017
 # Modified By: yanyan.yyy
 # -----
 ###
@@ -25,4 +25,6 @@ def reStr(a):
     return output
 
 
-print reStr(123445665)
+print reStr(1265.1212)
+
+print("{:,}".format(1265.1212));
